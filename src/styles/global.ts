@@ -37,6 +37,13 @@ const GlobalStyles = createGlobalStyle`
 		font-weight: 600;
 		src: url('/fonts/poppins-v22-latin-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 	}
+	
+	@font-face {
+    font-family: 'Urzeit'; 
+    src: url('../fonts/Urzeit-Personal_Use.ttf') format('truetype');
+    font-weight: normal; 
+    font-style: normal; 
+}
 
   * {
       margin: 0;
