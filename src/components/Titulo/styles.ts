@@ -25,6 +25,7 @@ const ColorModifiers = {
 export const Title = styled.h1<Props>`
   font-family: ${props => props.theme.font.familyUrzeit};
   font-weight: normal;
+  font-display: swap;
   margin: 0;
   padding: 0;
   ${props => SizeModifiers[props.size || 'medium'](props.theme)}
