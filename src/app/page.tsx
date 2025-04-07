@@ -3,6 +3,8 @@ import Titulo from '@/components/Titulo'
 import * as S from './styles'
 import { useEffect, useState } from 'react'
 import Vaga from '@/components/Vaga'
+import Footer from '@/components/Footer'
+import SubTitulo from '@/components/SubTitulo'
 
 export default function Home() {
   const [vagas, setVagas] = useState([])
@@ -41,6 +43,10 @@ export default function Home() {
       <Titulo size="large" color="primary">
         ESTAMOS RECRUTANDO
       </Titulo>
+      <SubTitulo>
+        O Comitê Técnico Baja SAE BRASIL está buscando voluntários para posições
+        dos subcomitês:
+      </SubTitulo>
       <S.ContainerVagas>
         {loading && <p>Loading...</p>}
         {error && <p>Error loading vagas</p>}
@@ -48,6 +54,7 @@ export default function Home() {
           <Vaga key={index} data={vaga} isFirst={index === 0} />
         ))}
       </S.ContainerVagas>
+      <Footer>© 2025 Baja SAE BRASIL. Todos os direitos reservados.</Footer>
     </S.Main>
   )
 }

@@ -9,4 +9,5 @@ font-family: ${props => props.theme.font.family};
 font-weight: 300;
 font-size: ${props => props.theme.font.sizes.xsmall};
 color: ${props => props.theme.colors.white};
+height: 100px;
 opacity: 0.7;`
